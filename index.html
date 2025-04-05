@@ -2,103 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ashley Mayo | Data Portfolio</title>
+  <title>Ashley Mayo | Capstone Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
     }
-    h1 {
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: #ddd;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4em;
       color: #2c3e50;
     }
-    .project {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 5px solid #2980b9;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    .card p {
+      margin: 10px 0;
     }
-    .project a {
+    .buttons {
+      margin-top: 10px;
+    }
+    .btn {
       display: inline-block;
-      margin-top: 6px;
-      color: #2980b9;
+      padding: 10px 15px;
+      margin-right: 10px;
+      background-color: #2980b9;
+      color: white;
       text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9em;
+      transition: background 0.2s ease;
     }
-    .project a:hover {
-      text-decoration: underline;
+    .btn:hover {
+      background-color: #1c5d8c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <h1>Ashley Mayo | Data Science Portfolio</h1>
-  <p>Explore my data projects with code notebooks and project papers.</p>
+<header>
+  <h1>Ashley Mayo</h1>
+  <p>Data Science Capstone Portfolio</p>
+</header>
 
-  <div class="project">
-    <h2>🐾 Pet Adoption Prediction</h2>
-    <p>Predicted animal shelter outcomes using classification models and real shelter data.</p>
-    <a href="Project1-Pet-Adoption-Prediction/AshleyMayoDSC680P1Code (2).ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project1-Pet-Adoption-Prediction/AshleyMayoDSC680P1Milestone3.docx">📄 View Project Paper</a>
-  </div>
+<div class="container">
+  <div class="grid">
 
-  <div class="project">
-    <h2>🏠 Airbnb Price Predictor</h2>
-    <p>Used regression techniques to estimate Airbnb listing prices based on location and amenities.</p>
-    <a href="Project2-Airbnb-Predictor/Airbnb_Predictor_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project2-Airbnb-Predictor/Airbnb_Project_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 1 -->
+    <div class="card">
+      <h2>🐾 Pet Adoption Prediction</h2>
+      <p>Classification models predicting animal shelter outcomes.</p>
+      <div class="buttons">
+        <a class="btn" href="Project1-Pet-Adoption-Prediction/AshleyMayoDSC680P1Code (2).ipynb">Notebook</a>
+        <a class="btn" href="Project1-Pet-Adoption-Prediction/AshleyMayoDSC680P1Milestone3.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>🌪️ Disaster Relief Optimizer</h2>
-    <p>Optimized disaster aid allocation using clustering and geographic mapping techniques.</p>
-    <a href="Project3-Disaster-Relief-Optimizer/DisasterRelief_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project3-Disaster-Relief-Optimizer/DisasterRelief_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 2 -->
+    <div class="card">
+      <h2>🏠 Airbnb Price Predictor</h2>
+      <p>Regression model predicting Airbnb listing prices by features.</p>
+      <div class="buttons">
+        <a class="btn" href="Project2-Airbnb-Predictor/Airbnb_Predictor_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project2-Airbnb-Predictor/Airbnb_Project_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>👶 Childcare Crisis Analysis</h2>
-    <p>Explored the rising costs and impact of childcare on working families across the U.S.</p>
-    <a href="Project4-Childcare-Crisis/ChildcareCrisis_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project4-Childcare-Crisis/ChildcareCrisis_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 3 -->
+    <div class="card">
+      <h2>🌪️ Disaster Relief Optimizer</h2>
+      <p>Used geospatial clustering to optimize emergency resource distribution.</p>
+      <div class="buttons">
+        <a class="btn" href="Project3-Disaster-Relief-Optimizer/DisasterRelief_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project3-Disaster-Relief-Optimizer/DisasterRelief_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>💳 Credit Card Fraud Detection</h2>
-    <p>Built machine learning models to detect fraudulent credit card transactions.</p>
-    <a href="Project5-Credit-Card-Fraud-Detection/CreditFraud_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project5-Credit-Card-Fraud-Detection/CreditFraud_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 4 -->
+    <div class="card">
+      <h2>👶 Childcare Crisis Analysis</h2>
+      <p>Investigated rising costs of childcare and socioeconomic impact.</p>
+      <div class="buttons">
+        <a class="btn" href="Project4-Childcare-Crisis/ChildcareCrisis_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project4-Childcare-Crisis/ChildcareCrisis_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>📈 Investing at Various Points</h2>
-    <p>Analyzed investment returns over time with historical stock market data.</p>
-    <a href="Project6-Investing-at-Various-Points/Investing_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project6-Investing-at-Various-Points/Investing_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 5 -->
+    <div class="card">
+      <h2>💳 Credit Card Fraud Detection</h2>
+      <p>Built ML models to flag fraudulent transactions from financial data.</p>
+      <div class="buttons">
+        <a class="btn" href="Project5-Credit-Card-Fraud-Detection/CreditFraud_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project5-Credit-Card-Fraud-Detection/CreditFraud_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>🎬 Netflix Viewership Analysis</h2>
-    <p>Investigated viewing habits and content trends on Netflix.</p>
-    <a href="Project7-Netflix-Viewership-Analysis/Netflix_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project7-Netflix-Viewership-Analysis/Netflix_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 6 -->
+    <div class="card">
+      <h2>📈 Investing at Various Points in your Life</h2>
+      <p>Historical analysis of investment returns over time.</p>
+      <div class="buttons">
+        <a class="btn" href="Project6-Investing-at-Various-Points/Investing_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project6-Investing-at-Various-Points/Investing_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>🚗 Kia Theft Trends</h2>
-    <p>Analyzed recent increases in Kia vehicle thefts using public datasets.</p>
-    <a href="Project8-Kia-Thefts/KiaThefts_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project8-Kia-Thefts/KiaThefts_Paper.docx">📄 View Project Paper</a>
-  </div>
+    <!-- Project 7 -->
+    <div class="card">
+      <h2>🎬 Netflix Viewership Analysis</h2>
+      <p>Uncovered patterns in show popularity and viewer behavior.</p>
+      <div class="buttons">
+        <a class="btn" href="Project7-Netflix-Viewership-Analysis/Netflix_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project7-Netflix-Viewership-Analysis/Netflix_Paper.docx">Paper</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2>🛄 TSA Complaints Dashboard</h2>
-    <p>Created a dashboard to visualize trends in TSA-related traveler complaints.</p>
-    <a href="Project9-TSA-Complaints/TSAComplaints_Code.ipynb">🔗 View Jupyter Notebook</a><br>
-    <a href="Project9-TSA-Complaints/TSAComplaints_Paper.docx">📄 View Project Paper</a>
+    <!-- Project 8 -->
+    <div class="card">
+      <h2>🚗 Kia Theft Trends</h2>
+      <p>Visual analytics on vehicle theft trends for Kia models.</p>
+      <div class="buttons">
+        <a class="btn" href="Project8-Kia-Thefts/KiaThefts_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project8-Kia-Thefts/KiaThefts_Paper.docx">Paper</a>
+      </div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="card">
+      <h2>🛄 TSA Complaints Dashboard</h2>
+      <p>Visual dashboard exploring U.S. TSA passenger complaints.</p>
+      <div class="buttons">
+        <a class="btn" href="Project9-TSA-Complaints/TSAComplaints_Code.ipynb">Notebook</a>
+        <a class="btn" href="Project9-TSA-Complaints/TSAComplaints_Paper.docx">Paper</a>
+      </div>
+    </div>
+
   </div>
+</div>
+
+<footer>
+  &copy; 2025 Ashley Mayo. All rights reserved.
+</footer>
 
 </body>
 </html>
