@@ -1,2 +1,6 @@
 # Kia Thefts
-The primary purpose of this analysis is to emphasize the growing crisis of Kia and Hyundai vehicle thefts and to advocate for specific preventive measures. 
+Overview:
+Analyzed public crime report data to identify trends in Kia vehicle thefts and regional theft hotspots.
+
+Objective:
+Support awareness campaigns and risk assessments for auto owners, insurance companies, and law enforcement.
