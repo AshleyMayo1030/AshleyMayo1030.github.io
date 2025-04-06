@@ -1,2 +1,6 @@
 # Pet Adoption Prediction 
-This project aims to help animal shelters uncover the hidden patterns that lead to different outcomes (i.e., adoption, euthenasia, transfer, etc.). By identifying patterns early, shelters can act with foresight instead of hindsight, and help more animals find a second chance at life.
+Overview:
+This project uses classification models to predict animal shelter outcomes such as adoption, transfer, or euthanasia based on intake characteristics including animal type, age, breed, and intake condition.
+
+Objective:
+Help animal shelters identify factors associated with positive adoption outcomes to improve placement rates and reduce euthanasia.
