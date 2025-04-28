@@ -17,6 +17,15 @@
       padding: 0;
     }
 
+    /* Header Name Section */
+    .header-name {
+      text-align: center;
+      padding: 60px 20px 20px 20px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
     /* Section containers */
     .about-me, .contact-section {
       background-color: #ffffff;
@@ -35,7 +44,6 @@
       padding: 40px;
     }
 
-    /* Card for each project */
     .card {
       background-color: #ffffff;
       color: #111111;
@@ -96,10 +104,14 @@
 
 <body>
 
+  <!-- Header with Name -->
+  <div class="header-name">
+    Ashley Mayo
+  </div>
+
   <!-- About Me Section -->
   <section class="about-me">
     <h1>About Me</h1>
-    <h2>Ashley Mayo</h2>
     <p>
       This portfolio highlights the projects I completed during my master’s program, each designed to solve real-world problems — from predicting Airbnb prices and analyzing pet adoption outcomes to investigating trends in childcare costs and detecting financial fraud. I’m passionate about transforming complex data into meaningful stories and actionable insights.
     </p>
@@ -112,7 +124,6 @@
   <section class="projects-section">
     <h1>Projects</h1>
 
-    <!-- Project Cards -->
     <div class="card">
       <h2>Pet Adoption Prediction</h2>
       <p>Classification models predicting animal shelter outcomes.</p>
